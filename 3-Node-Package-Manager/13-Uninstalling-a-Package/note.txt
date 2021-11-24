@@ -1,0 +1,1 @@
+$ npm un mongoose // removed from package.json and node_modules

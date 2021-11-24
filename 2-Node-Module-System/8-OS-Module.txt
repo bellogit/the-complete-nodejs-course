@@ -1,0 +1,15 @@
+https://nodejs.org/docs/ - go to the LTS - OS
+os.freemem
+os.totalmem
+
+const os = require('os')
+
+var totalMemory = os.totalmem()
+var freeMemory = os.freemem()
+
+console.log('Total Memory: ' + totalMemory);
+console.log(`FreeMemory: ${freeMemory}`);
+
+// Build template string - no concatenation
+Total Memory: 4202176512
+FreeMemory: 1233674240

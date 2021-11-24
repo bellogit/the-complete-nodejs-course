@@ -1,0 +1,12 @@
+- NodeJS or Node is an open source and cross platform, runtime environment for executing JavaScript code outside of the brower. 
+- It is a runtime environment for executing  JavaScript code
+- Often times we need node to build backend services also called API - Applicatioon Programming Interface. This are services that powers the client application
+- Node is ideal for building highly-scalable, data-intensive and real-time backend services that powers our app
+
+Uses
+- Great for prototyping and agile development
+- Superfast and highly scalable services - used in large companies like PayPal, Netflex, Uber, etc
+- We use JavaScript everywhere - (front end and back end codebase)
+- Cleaner and more consistent codebase (in the front end and back end)
+- Large ecosystem of open-source libs
+

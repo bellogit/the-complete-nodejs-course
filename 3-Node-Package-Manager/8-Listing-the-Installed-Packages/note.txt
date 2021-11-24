@@ -1,0 +1,8 @@
+package.json - confirm the package used
+node_modules - find mongoose - package.json (mostly at the end)
+Alternatively
+$ npm list
+
+Specific - only dependencies of your app
+$ npm list --depth=0
+

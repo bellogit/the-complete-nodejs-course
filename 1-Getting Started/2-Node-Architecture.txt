@@ -1,0 +1,10 @@
+Node Architecture
+- Runtime Environment
+The browser provide a run-time environment for JavaScript code
+window.document.querySelector('...') - document object allow us to work in an environment in which our code is running 
+In 2009, Ryan Dahl took V8 engine and embedded it inside a C++ program and called it Node (Node.exe)
+The objects in the brower environment are most likely different from the server environment (fs.readFile(), http.createServer()) but we also have global objects (console.log()) that works both in the browser and server.
+- Both Chrome and Node share the same JS engine but provide different runtime environment for JavaScript
+- Node is not a Programming language.
+
+-variety in js engine 

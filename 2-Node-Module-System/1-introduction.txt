@@ -1,0 +1,9 @@
+- What Modules are?
+- Why we need them and how they work?
+- We will explore a few of the modules built into the core of node:
+- os
+- fs
+- events
+- http 
+
+- You will also learn how to create your own modules

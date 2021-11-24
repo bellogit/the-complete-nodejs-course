@@ -1,0 +1,25 @@
+console.log() - global object. It is part of the global scope which means we can access it anywhere in any files
+
+Others
+- setTimeout() - call a function after a delay
+- clearTimeout  
+- setInterval() - repeatedly call a function after a delay
+- clearInterval() - stop the function from being called repeatedly
+
+In the browser - run window on node v8 at runtime you get an error
+window.console.log(), window.setTimeout, etc - the JavaScript engine will prefix the window object even if we don't specify it.
+
+var = message = ''
+console.log(window.message)
+
+The variable, message is also available via the window object
+
+In Node
+In node it is global, not window - global.console.log(), global.setTimeout
+But in node, 
+var = message = ''
+console.log(global.message)
+the variable is not added to the global object. Message is only scope to the file. You will get undefined instead.
+
+The variable, messageis only scped to the file,app.js. They are not available outside of the file. This is because of Node Modular System
+

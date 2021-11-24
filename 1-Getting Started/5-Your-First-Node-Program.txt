@@ -1,0 +1,8 @@
+$ mkdir first-app
+$ cd first-app/
+$ touch app.js
+first-app $ code .
+first-app $ node app.js # node is a c++ program that uses chrome V8 
+# JavaScript Engine
+# The app.js from node will be given to v8 engine for execution
+console.log(window); // ReferenceError

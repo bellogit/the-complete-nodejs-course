@@ -1,0 +1,10 @@
+copy source code from one machine to another - delete node_module - no worries - npm install will reinstall node_module based on the meta data in the package.json
+
+$ npm install
+
+$ git init
+$ git status
+.gitignore -> node_modules/
+$ git status
+$ git add .
+$ git commit -m "first commit"

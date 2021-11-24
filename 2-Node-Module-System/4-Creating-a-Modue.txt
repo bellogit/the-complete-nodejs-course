@@ -1,0 +1,23 @@
+We will use one of those remote login services for logging our messages. So there are websites out there that provide login as a service - They give use a URL, and we can send an HTTP request to the URL to log messages in he cloud.
+
+var url = 'http://mlogger.io/log'
+
+function log(message) {
+    // Send an HTTP request
+    console.log(message)
+}
+
+variable url and log function are both scoped in the module
+We can export it to make it visible (public) in another module.
+
+module.exports.log = log;
+module.exports.url = url; // module.exports.endPoint = url;
+
+module.export has a single method called log
+
+We could change the name that is exported outside, e.g we may call the method url to endPoint.In this case the url variable (=url) do not need to  be exported because it is just implementation detail.We export subset of the members to the outside.
+
+
+
+- public Interface
+- implementation Detail

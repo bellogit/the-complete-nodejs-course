@@ -1,0 +1,10 @@
+Working with Global packages - e.g. npm - not specofic to any project, ng (angular cli)
+$ npm i -g npm@5.5.1
+$ npm i -g npm - upgrade npm to the lates version (sudo for mac)
+
+
+// check out all the outdated packages
+$ npm -g outdated
+
+// uninstall a global package
+$ npm un -g <name of the parkage>

@@ -1,0 +1,6 @@
+install mongoose (store data in mongoDB) - inspect the package.json file & node module folder
+
+checkout the module or use
+
+$ ls node_modules/
+Notes mongoose package has some other packages that mongoose is dependent upon for it to work successfully

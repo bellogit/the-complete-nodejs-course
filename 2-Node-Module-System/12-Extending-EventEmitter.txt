@@ -1,0 +1,49 @@
+In the real world, it is rear you will work with the object emitter dirrectly - const emitter = new EventEmitter()
+
+Instead you want to create a class that have all the capability of the event emitter then use the class in your code.
+
+We will use the same logger object for registering an eventlistener and raising an event tp see the message on the console - 'Listener called ...'
+
+// logger.js
+const EventEmitter = require('events');
+
+var url = 'http://mylogger.io/log'
+
+class Logger extends EventEmitter { // class is a syntaxical sugar for creating a constructor function
+    log(message) {
+        // Send an HTTP request
+        console.log(message);
+
+        // Raise an event
+        this.emit('messageLogged', { id: 1, url: 'https://' })
+    }
+}
+
+module.exports = Logger;
+
+// app.js
+const Logger = require('./13-Extending-EventEmitter1.js');
+const logger = new Logger();
+
+// Register a listener
+logger.on('messageLogged', (arg) => {
+    console.log('Listener called', arg);
+});
+
+logger.log('message')
+
+You can't use an emitter object in one module to emit an event and use another event emitter object in another module to handle that event.
+
+The below code is wrong:
+const EventEmitter = require('events);
+const emitter = new EventEmitter()
+
+var url = 'http://...'
+
+function log(messgae) {
+    console.log(message);
+
+    emitter.emit('messageLogged', {id: 1, url: 'http://'});
+}
+
+module.exports = log;

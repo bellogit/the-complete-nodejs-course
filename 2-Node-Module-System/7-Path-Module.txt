@@ -1,0 +1,24 @@
+In node we have a few built in modue that let's work with files,os, network, etc.
+https://nodejs.org/docs/ - go to the LTS
+We see more objects and less modules
+
+Example of modules:
+- File System
+- HTTP
+- os
+- path 
+- process
+- Query String
+- Stream
+
+Select Path module
+
+Path object has a lot of built in methods like parse() method
+
+{
+  root: 'C:\\',
+  dir: 'C:\\Users\\BELLO\\Desktop\\node\\mosh\\2-Gloal-Object',
+  base: '8-Path-Module.js',
+  ext: '.js',
+  name: '8-Path-Module'
+}

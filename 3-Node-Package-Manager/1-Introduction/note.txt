@@ -1,0 +1,10 @@
+NPM - command line tool and a registry of third party lirary that we can add to our node app.
+
+npmjs.com
+
+$ npm -v
+$ node -v
+$ npm i -g npm@5.5.1
+
+Mac:If the permission on your machine are not configured properly you will need to use sudo
+$ sudo npm i -g @5.5.1

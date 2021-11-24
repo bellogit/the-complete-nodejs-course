@@ -1,0 +1,18 @@
+LocalHost 3000 may work on your machine, but it isn't certain it work in 
+production environment
+
+When deployed to a hosting environment, 
+the port is dynamically assigned by the hosting environment
+
+Environment Variable = PORT -It is port of the environment in which a process run.
+It is set outside the application
+
+const port = process.env.PORT || 3000
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`)
+});
+
+
+Set an environment variable via the terminal
+$ export PORT=5000 (mac)
+$ set PORT=5000 (windows)

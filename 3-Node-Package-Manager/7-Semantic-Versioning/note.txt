@@ -1,0 +1,12 @@
+"dependencies": {
+    "mongoose": "^4.13.6", // SerVer - Major.Minor.Patch (version)
+    "underscore": "^1.8.3"
+}
+bug in 4.13.6 - fixed bug 14.13.7 (patch) - add new feature now the existing API - 4.14.0 - 0 because in that version no bug is found yet - could be unstable - feature that could reak the existinfg application that is dependent o=upon the version on moongoose - 5.0.0
+
+^ - Instrested in any version of mongoose as far the major version is 4
+
+^4.13.6 or 4.x
+
+Major.Minor ~ -> ~1.8.3 // 1.8.x
+use 1.8.3 to get the exact version

@@ -1,0 +1,30 @@
+module.exports.add = function(a, b) { return a + b };
+
+
+The folder where this package will be should be unique to get permision to publish
+$ npm --yes
+$ npm init
+create an account in npm 
+$ npm adduser
+
+Already have an acc.
+$ npm login
+$ npm publish
+
+You need permissionnto publish the package - use a unique name in your package.json file
+
+$ npm publish
+
+Let's use the published package in another node application
+$ npm init
+$ npm i lion-lib
+
+
+
+
+in index.js
+var lion = require('lion-lib');
+var result = lion.add(1, 2)
+console.log(result)
+
+$ node index.js

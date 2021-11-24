@@ -1,0 +1,5 @@
+$ mkdir npm-demo
+$ cd npm-demo
+$ npm init (basic info of app - bunch of meta data of app)
+or
+$ npm init --yes

@@ -1,0 +1,10 @@
+to call http services we use postman 
+chrome postman -> add to chrome -> app menu -> take me straight ti the app...
+
+select post -> ENTER URL ->  set the body of the request -> raw -> json
+
+{
+    "name": "new course"
+}
+
+send

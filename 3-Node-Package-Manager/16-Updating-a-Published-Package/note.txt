@@ -1,0 +1,19 @@
+back to lion-lib folder
+
+let add for multiply
+module.exports.multiple = function(a, b) { return  a * b};
+
+$ npm publish - error 
+
+You need to update the version number.
+- package.json - update version number manually or use npm
+
+$ npm version major
+$ npm version minor
+$ npm version patch
+
+$ npm version minor
+v1.1.0
+
+$ npm publish
++ lion-lib@1.1.0

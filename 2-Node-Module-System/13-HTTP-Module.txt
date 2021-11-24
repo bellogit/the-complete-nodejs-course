@@ -1,0 +1,10 @@
+HTTP module is used to create networking application.
+
+- We can create a web server that listen for an HTTP request on a given port and with that we can create a back end service for our client app.
+
+Node doc -> HTTP module -> class: http.Server inheriting from net.Server...
+net.Server is an event emitter
+
+Any time there's a new connection/request, the server raises an event. So we can use the on method to handle that event
+
+- Building back end serves or our web or mobile app, we need to handle various route here

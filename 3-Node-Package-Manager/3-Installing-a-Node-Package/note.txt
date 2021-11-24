@@ -1,0 +1,15 @@
+npmjs.com - underscore - 1.8.3 - npm install underscore - download the latest version from npm registry - store it in a folder called node_modules - every node node module has its own package.json. It cantains some info or meta data about the package - keyword, etc
+
+before we do this
+$ npm install underscore --save
+
+Notice the package.son in node_module is:
+"version": "1.8.3"
+
+package.json
+...
+"dependencies": {
+    "underscore": "^1.8.3"
+}
+
+^1.8.3

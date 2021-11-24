@@ -1,0 +1,53 @@
+var sayHello = function() {
+    //...
+}
+
+window.sayHello() // available in the window object
+If we define the function in another file, the new functiondefinition wil override the previous definition.
+
+To avoid defining variable and functions in the global scope, instead we need modularity. 
+Modules are small building block. we can use modules to define variables and functions to keep them private. 2 functions and variables with the same name do not override another variable or funtion with the same name.
+
+Every file in the node appication is called a module, variables and functions are scoped to that file.In OOP we say they are private. We need to export certain variable and function to be used in another file to make it public.
+
+Every node has at least one file or one module called the main module - app.js is our main module.
+
+console.log(module); // module is not a global object so we can't do console.log(global.module) //undefined;
+
+console.log(module)
+Module {
+  id: '.',
+  path: 'C:\\Users\\BELLO\\Desktop\\node\\mosh\\2-Node-Module-System',
+  exports: {},
+  filename: 'C:\\Users\\BELLO\\Desktop\\node\\mosh\\2-Node-Module-System\\3-Modules.js',
+  loaded: false,
+  children: [],
+  paths: [
+    'C:\\Users\\BELLO\\Desktop\\node\\mosh\\2-Node-Module-System\\node_modules',
+    'C:\\Users\\BELLO\\Desktop\\node\\mosh\\node_modules',
+    'C:\\Users\\BELLO\\Desktop\\node\\node_modules',
+    'C:\\Users\\BELLO\\Desktop\\node_modules',
+    'C:\\Users\\BELLO\\node_modules',
+    'C:\\Users\\node_modules',
+    'C:\\node_modules'
+  ]
+}
+
+file - 1
+const logger = () => {
+  // ...
+}
+module.exports.log = log
+
+file - 2,  logger
+const logger = require('logger')
+console.log(logger) // {log: [function: log]}
+console.log(logger.log('....'))
+
+We have an object - A json object with key:value pair
+
+
+
+
+
+

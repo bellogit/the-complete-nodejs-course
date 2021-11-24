@@ -1,0 +1,5 @@
+installing nodemon (short node monitor)
+$ npm i -g nodemon
+$ sudo npm i -g nodemon
+
+

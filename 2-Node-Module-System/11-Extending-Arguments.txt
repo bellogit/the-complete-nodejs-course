@@ -1,0 +1,3 @@
+When we want to raise an event, we also want to send some data about the event.
+
+If it is more than 1 event argument, have it in an object.

@@ -1,0 +1,18 @@
+A event is a signal that indicates something has happened in ur app.
+
+In node the HTTP class is used to build a web server. So we listen on a given port and everytime we receive a request from the port, the HTTP class raises an event
+
+We need to respond to that obj by reading the req and returning the right  response....
+
+Different classes of node raises different type of events.
+
+Node doc - Events - Class: EventEmitter - It is of the core building block of node. A lot of classes are bason this EventEmitter.
+
+const EventEmitter = require('events); // uppercase shows it is a class...
+A class is a container for properties and functions which we call methods.
+Create a instance the class -which is an objct
+
+class - Human (A class define the property and behavior of the concept of human)
+object - John(Actual instance of that class) 
+
+on or addListener does exactly the same

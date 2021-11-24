@@ -1,0 +1,14 @@
+0 stdin, stdout 1, stderr 
+
+process.stdout.write('Hello World')
+console.log()
+
+$ node exj.js
+
+
+$ node ext1.js 1 >/dell/null 1>&2
+chmod u+x ex.js
+
+readalestream1.pipe(writestream2)
+transform(chunk, encoding, finished) // chunk is a buffer
+this.push() // push something from our stream into the chunk

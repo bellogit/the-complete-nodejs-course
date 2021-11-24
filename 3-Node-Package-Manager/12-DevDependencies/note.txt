@@ -1,0 +1,5 @@
+Dependencies for only in development can also be installed
+
+tools for static analysis, tool for test, tools for bundling our js code - they should not go to the production environment where we deploy our app
+
+$ npm install jshint --save-dev -check the devDependencies in package.json

@@ -1,0 +1,55 @@
+client-server architecture
+--------------------------
+Communication between the client and server occurs via 
+the HTTP protocol (powers our web)
+
+On the server we expose a bunch of services that are accessible via the 
+HTTP protocol. The client can call the services by sending HTTP request.
+
+REST - Representational State Transfer (build HTTP service)
+- HTTP principles provide support to
+1. Create
+2. Read
+3. Update
+4. Delete data
+
+endpoint = http://vidly.com/api/customers
+expose service like http://vidly.com/api/customers
+
+HTTP methods/verb
+1. GET
+2. POST
+3. PUT
+4. DELETE
+
+Request                          Response
+-------------------              ----------------
+- GET A CUSTOMER
+GET /api/customers              [{id:1, name:''},...]
+GET /api/customers/1            [{id:1, name:''}]
+
+Request                          Response
+-------------------              ----------------
+- UPDATE A CUSTOMER 
+PUT /api/customers/1              {id:1, name: ''}
+include the customers obj 
+in the body of the request
+{name: ''}
+
+Request                          Response
+-------------------              ----------------
+- DELETE A CUSTOMER 
+DELETE /api/customers/1           {id:1, name: ''}
+
+Request                          Response
+-------------------              ----------------
+- CREATE A CUSTOMER
+POST /api/customers              [{id:1, name:''},...]
+Here no id in the address,
+but instead we working with
+the collection of customers
+
+include the customer obj 
+in the body of the request
+{name: ''}
+

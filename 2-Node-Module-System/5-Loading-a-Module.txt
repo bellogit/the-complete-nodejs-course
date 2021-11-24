@@ -1,0 +1,38 @@
+To load a module we use the require function
+require('./4-Creating-a-Module'); // Node assumes it is a JavaScript file - no need to do './4-Creating-a-Module.js'... If in a subfolder you can do './subFolder/4-Creating-a-Module' or in the parent we could do '../4-Creating-a-Module' - relaive path to that module
+
+Let's require the export function fro a file into 5-Loading-a-Module.js
+
+use const instead of var in loadding a module so as not to accidentally override the value of logger
+
+const logger = require('./logger');
+logger = 1
+logger.log('message') // TypeError: Assignment to constant variable
+
+so const allow us to prevent this errors at runtime - example of such tool is JSHint e.g. jshint 5-Loading-a-Module.js
+
+$ jshint 4-Creating-a-Modular.js // ..., Attempting to override 'logger' which is a constant.
+
+accidentally changing the object, logger we will get an error at compile time, not runtime
+
+If we used logger.log('message) we will get "TypeError: logger.log is not a function"
+
+Note: module.exports.log = log means we exporting an object (it's an empty object), but we can only export a function. Use module.exports = log if we have multitude method and properties
+
+module.exports = log;
+logger is no logger an object but a function.
+in logger file, logger.log(...) becomes logger(...);
+
+A better name is log, f2 and set all logger to 
+
+So u can export a single object or a function
+
+- sometime instead of exporting an object from a module, we may want to export only a function we only want to export a single function...
+
+An object will will e useful if we had multiple properties and methods
+
+module.exports = log (now a function)
+
+const logger = require('./logger'); better name - log
+logger('logger'); better name - log
+

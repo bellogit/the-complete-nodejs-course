@@ -1,0 +1,11 @@
+- We have scalable Node because of the Non-blocking asynchronous of Node
+- The waiter is like a thread allocated to handle a request
+- When we query a database, our request do not have to wait 
+for the database to return the data
+- While the database is executing our query, the database will be used to serve
+another client
+- The database compares the result and puts it in an event queue
+- It continuously monitor this queue in the background
+- When it finds an event in the queue, it will take it out an process it.
+- This makes node ideal for lots of disc and network assess (all i/o-intensive apps)
+- Node should not be used for CPU-intensive apps (like video encoding or an image manipulation service) because we have a lot of computation to be done by CPU and few operation that touch the file system with the network. 

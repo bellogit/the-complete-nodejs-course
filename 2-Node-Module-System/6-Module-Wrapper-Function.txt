@@ -1,0 +1,16 @@
+(function(exports, require, mdule, __filename, __dirname) {
+    var x =;
+})
+
+SyntaxError: Unexpected token; 
+
+This shows Node does not execute your code directly instead 
+it wraps it inside of a function - Wrapper module function
+
+Add function to module.exports object - module.exportts.log = log
+or module.exports = log
+
+export.log = log
+
+C:\Users\BELLO\Desktop\node\mosh\2-Gloal-Object\6-Module-Wrapper-Function.js
+C:\Users\BELLO\Desktop\node\mosh\2-Gloal-Object

@@ -1,0 +1,6 @@
+$ npm view mongoose
+
+intested only on the dependencies
+$ npm view mongoose dependencies
+
+$ npm view mongoose versions
